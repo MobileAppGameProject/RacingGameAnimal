@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#33ff0000"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp" />
+    <CheckBox
+        android:layout_marginBottom="50dp"
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkBox3"
+        android:layout_alignLeft="@+id/checkBox3"
+        />
+
+    <CheckBox
+        android:layout_marginBottom="50dp"
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkBox2"
+        android:layout_alignLeft="@+id/checkBox2" />
+
+
+    <SeekBar
+
+        android:progressDrawable="@android:color/transparent"
+        android:thumb="@drawable/dog"
+        android:id="@+id/seekBar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/checkBox3"
+        android:layout_alignBottom="@id/checkBox3"
+        />
+
+    <SeekBar
+
+        android:progressDrawable="@android:color/transparent"
+        android:thumb="@drawable/lion"
+        android:id="@+id/seekBar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/checkBox2"
+        android:layout_alignBottom="@id/checkBox2"
+        />
+
+    <SeekBar
+
+        android:progressDrawable="@android:color/transparent"
+
+        android:thumb="@drawable/tiger"
+        android:id="@+id/seekBar1"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:layout_alignBottom="@+id/checkBox1"
+        android:layout_toRightOf="@+id/checkBox1"
+    />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/racing" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="31dp"
+        android:text="100"
+        android:textColor="#0000ff"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/playButton"
+        android:background="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/playbutton"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rankingBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#FFFF00">
+
+
+        <TextView
+            android:id="@+id/firstPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:text="1st place:"
+            android:layout_margin="10dp"
+            android:textColor="#000000"
+            android:textSize="30sp"></TextView>
+
+        <TextView
+            android:id="@+id/secondPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/firstPlace"
+            android:text="2nd place:"
+            android:layout_margin="10dp"
+            android:textColor="#000000"
+            android:textSize="30sp"></TextView>
+
+        <TextView
+            android:id="@+id/thirdPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/secondPlace"
+            android:text="3rd place:"
+            android:layout_margin="10dp"
+            android:textColor="#000000"
+            android:textSize="30sp"></TextView>
+
+
+        <TextView
+            android:id="@+id/firstPosition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/firstPlace"
+            android:layout_alignBaseline="@id/firstPlace"
+            android:layout_margin="10dp"
+            android:text="none"
+            android:textColor="#000000"
+            android:textSize="30sp"></TextView>
+
+        <TextView
+            android:id="@+id/secondPosition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/secondPlace"
+            android:layout_alignBaseline="@id/secondPlace"
+            android:layout_margin="10dp"
+            android:text="none"
+            android:textColor="#000000"
+            android:textSize="30sp"></TextView>
+
+        <TextView
+            android:id="@+id/thirdPosition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/thirdPlace"
+            android:layout_alignBaseline="@id/thirdPlace"
+            android:layout_margin="10dp"
+            android:text="none"
+            android:textColor="#000000"
+            android:textSize="30sp"></TextView>
+
+        <ImageButton
+            android:id="@+id/closeButton"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/firstPosition"
+            android:src="@drawable/close" />
+
+    </RelativeLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="0dp"
+        android:columnCount="2">
+
+        <TextView
+            android:id="@+id/betHowMuchTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="5dp"
+            android:text="Bet how much:"
+            android:textSize="30sp" />
+
+        <Spinner
+            android:id="@+id/scoreSpinner"
+            android:layout_width="134dp"
+            android:layout_height="77dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:dropDownWidth="wrap_content" />
+
+        <Button
+            android:id="@+id/boostButton"
+            android:text="Boost"
+            android:textSize="30sp" />
+    </GridLayout>
+
+    <Button
+        android:id="@+id/rankingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:text="Ranking" />
+
+
+</RelativeLayout>

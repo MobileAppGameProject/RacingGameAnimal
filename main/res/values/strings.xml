@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">RacingAnimal</string>
+    <string name="first_place">First place:</string>
+    <string name="lion">Lion</string>
+    <string name="tiger">Tiger</string>
+    <string name="dog">Dog</string>
+
+
+
+    <string-array name="score">
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+</resources>
